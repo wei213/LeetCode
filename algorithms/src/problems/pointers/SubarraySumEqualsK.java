@@ -1,13 +1,16 @@
 package problems.pointers;
 import java.util.*;
+
+/**
+ * @problem LeetCode560 Given an array of integers and an integer k, 
+ * 			you need to find the total number of continuous sub-arrays whose sum equals to k.
+ * 			Note that K can be negative and positive, and values in the arrays are too.
+ * @solution pointers. two pass.
+ * @author WEI
+ *
+ */
 public class SubarraySumEqualsK {
-	/**
-	 * @problem LeetCode560 Given an array of integers and an integer k, 
-	 * 			you need to find the total number of continuous sub-arrays whose sum equals to k.
-	 * 			Note that K can be negative and positive, and values in the arrays are too.
-	 * @solution pointers. two pass.
-	 * @param args
-	 */
+	
 	public int subarraySum(int[] nums, int k) {
 	    if (nums == null || nums.length == 0) return 0;
 	    int left = 0;
